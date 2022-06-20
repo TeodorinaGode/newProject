@@ -1,0 +1,24 @@
+<mat-sidenav-container autosize>
+    <mat-sidenav #sidenav mode="side" opened="true">
+        <h1> Kategori</h1>
+        <mat-nav-list>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" *ngFor="let navItem of  adminNavBarItems; let i = index">
+                    <mat-list-item [routerLink]="[navItem.link]" class="nav-link" routerLinkActive="active">
+                         <!-- <mat-icon mat-list-icon class="">{{navItem.icon}}</mat-icon> -->
+                        <span>{{navItem.label}}</span>
+                    </mat-list-item>
+                    <div class="submenu-container">
+                        <span *ngFor="let sub of navItem.subMenu;let j = index" class="submenu-item"> {{ sub.label }}</span> 
+                      </div>
+                </li>
+            </ul>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <div class="content">
+        <app-navbar></app-navbar>
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-sidenav-container>

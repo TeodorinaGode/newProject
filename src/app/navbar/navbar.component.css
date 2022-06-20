@@ -1,0 +1,83 @@
+.nav-link{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-collapse{
+    position: absolute;
+    right: 15px;
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-dark.shadow{
+    border: none;
+}
+
+.mat-mini-fab.mat-accent{
+    background-color:  #fff !important;
+    color: rgba(0,0,0,.87) !important;
+    box-shadow: none;
+}
+
+.notification-number{
+    position: absolute;
+    top: 0;
+     background: red; 
+    /* width: 10px; */
+    padding: 0px 4px;
+    border-radius: 4px;
+    right: 3px;
+     font-size: 14px;
+    /*--tw-bg-opacity: 1 !important;
+    background-color: rgb(13 148 136 / var(--tw-bg-opacity))!important; */
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+    top: -20px;
+    right: 0px;
+}
+
+.fas .fa-user:hover{
+    background-color: unset !important;
+}
+
+.navbar{
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1) !important;
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)!important;
+    background-color: #fafafa;
+    color: rgba(66,66,66,.87);
+}
+
+.navbar-dark .navbar-brand{
+    color: black;
+}
+
+
+.navbar a{
+color:#000;
+text-decoration: unset;
+}
+
+.alert-success{
+    color: #000;
+    background-color: #eaeaea;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 4px 6px -1px rgb(0 0 0 / .1) !important;
+    --tw-shadow-colored: 0 4px 6px 0 var(--tw-shadow-color), 0 4px 2px -1px var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)!important;
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    border-color: #eaeaea;
+
+}
+
+.dropdown-menu{
+ border:unset;
+ background-color:#fff !important;
+}
+
+.link:hover{
+    color: red !important;
+}
