@@ -9,7 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,8 +19,8 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     MatSidenavModule,
-    MatIconModule,
     MatListModule,
+    MatIconModule,
     BrowserAnimationsModule
   ],
   providers: [],

@@ -19,23 +19,39 @@ export class WrapperComponent implements OnInit {
 
   public adminNavBarItems: Array<any> = [
 
-    { label: 'Paneli Kryesor',
+    { label: 'Pelena per femije',
      link: '#' ,
       subMenu: [
       { 
-        label: 'CAD', 
+        label: 'Item 1', 
+        link: '#' 
+      },
+      { 
+        label: 'Item 2', 
+        link: '#' 
+      },
+      { 
+        label: 'Item 3', 
+        link: '#' 
+      },
+      { 
+        label: 'Item 4', 
+        link: '#' 
+      },
+      { 
+        label: 'Item 5', 
+        link: '#' 
+      },{ 
+        label: 'Item 6', 
+        link: '#' 
+      },
+      { 
+        label: 'Item 7', 
         link: '#' 
       }
     ]},
-    { label: 'Shto Shpallje', link: '#' },
-    { label: 'Shpallje', link: '#' },
-    { label: 'Shpallje Draft', link: '#' },
-    { label: 'Aplikimet e mia ', link: '#' },
-    { label: 'Aplikant', link: '#' },
-    { label: 'Struktura Organizative', link: '#' },
-    { label: 'Përdoruesit', link: '#' },
-    { label: 'Rolet', link: '#' },
-    { label: 'Politikat e sigurisë', link: '#' },
+    { label: 'Produkte per nena shtatzen', link: '#' },
+    { label: 'Produkte për nena pas lindjes', link: '#' },
   ];
 
   constructor(
