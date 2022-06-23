@@ -1,7 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="height:50px;">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto main-category">
+            <li class="nav-item" *ngFor="let navItem of  adminNavBarItems; let i = index">
+                <mat-list-item [routerLink]="[navItem.link]" class="nav-link" routerLinkActive="active">
+                    <!-- <mat-icon mat-list-icon class="">{{navItem.icon}}</mat-icon> -->
+                    <span>{{navItem.label}}</span>
+                    <i *ngIf="navItem.subMenu" class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="MenuTree">
+                        <ul class="sub-category" *ngIf="navItem.subMenu">
+                            <li *ngFor="let sub of navItem.subMenu;" class="submenu-item"> {{ sub.label }}
+                                <ul class="subItem">
+                                    <li *ngFor="let item of sub.subMenu;">
+                                        {{
+                                            item.label
+                                        }}
 
-        <a class="nav-item dropdown link" style="cursor: pointer;" translate> &nbsp;Identifikohu</a>&nbsp;&nbsp;
-        <a class="nav-item dropdown link" style="cursor: pointer;" translate>&nbsp;Regjistrohu</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </mat-list-item>
+            </li>
+        </ul>
     </div>
 </nav>
