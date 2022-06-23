@@ -98,6 +98,7 @@ mat-sidenav-container {
 
 .sub-category {
     position: relative;
+    list-style: none;
     left: 0;
     right: 0;
     margin: 0 auto;
