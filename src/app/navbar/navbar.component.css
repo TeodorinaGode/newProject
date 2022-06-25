@@ -54,7 +54,7 @@ mat-sidenav-container {
 }
 
 .mat-list-item {
-    font-size: 12px;
+    font-size: 20px;
     color: #000;
 }
 
@@ -107,7 +107,7 @@ mat-sidenav-container {
     background: #fff;
     top: 0;
     z-index: 1;
-    top: 29px;
+    top: 18px;
     width: 20%;
     float: left;
     -webkit-transition: all 0.4s ease;
@@ -156,7 +156,7 @@ li:hover .sub-category {
     background: #fff;
     width: 220px;
     position: absolute;
-    left: 238px;
+    left: 278px;
     top: 0;
     z-index: 999999;
     opacity: 0;
@@ -175,4 +175,17 @@ li:hover .sub-category {
     opacity: 1;
     visibility: visible;
     
+}
+
+.sub-category li {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    padding: 13px 25px 13px 25px;
+    display: block;
+    text-transform: uppercase;
+}
+
+li:hover{
+    cursor: default;
 }

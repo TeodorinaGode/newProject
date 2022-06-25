@@ -16,18 +16,18 @@ export class NavbarComponent implements OnInit {
         label: 'Kategoritë',
         subMenu: [
           {
-            label: 'Pelena per femije',
+            label: 'Pelena për femije',
             subMenu: [
               {
-                label: 'Michael Prentice',
+                label: 'Item 1',
                 link: '#',
               },
               {
-                label: 'Stephen Fluin',
+                label: 'Item 2',
                 link: '#',
               },
               {
-                label: 'Mike Brocchi',
+                label: 'Item 3',
                 link: '#',
               },
             ],
@@ -36,33 +36,50 @@ export class NavbarComponent implements OnInit {
             label: 'Produkte per nena shtatzen',
             subMenu: [
               {
-                label: 'Delight your Organization',
+                label: 'Item 1',
+                link: '#',
+                img:'https://images.oyoroomscdn.com/uploads/hotel_image/1097/340ea5ee01acc37f.jpg'
+              },
+              {
+                label: "Item 2",
                 link: '#',
               },
               {
-                label: "What's up with the Web?",
+                label: 'Item 3',
                 link: '#',
               },
               {
-                label: 'My ally, the CLI',
-                link: '#',
-              },
-              {
-                label: 'Become an Angular Tailor',
+                label: 'Item 4',
                 link: '#',
               },
             ],
           },
           {
-            label: 'Produkte për nena pas lindjes',
-            link: '#',
+            label: 'Produkte per nena pas lindjes',
+            subMenu: [
+              {
+                label: 'Item 5',
+                link: '#',
+              },
+              {
+                label: "Item 6",
+                link: '#',
+              },
+              {
+                label: 'Item 7',
+                link: '#',
+              },
+              {
+                label: 'Item 8',
+                link: '#',
+              },
+            ],
           },
         ],
       }
     ];
 
     ngOnInit(): void {
-      console.log(this.adminNavBarItems);
     } 
 
 }

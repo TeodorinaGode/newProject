@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="height:50px;">
+<nav class="navbar navbar-expand-lg navbar-dark" style="height:40px;">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto main-category">
             <li class="nav-item" *ngFor="let navItem of  adminNavBarItems; let i = index">
@@ -9,13 +9,12 @@
                     <div class="MenuTree">
                         <ul class="sub-category" *ngIf="navItem.subMenu">
                             <li *ngFor="let sub of navItem.subMenu;" class="submenu-item"> {{ sub.label }}
+                                <i *ngIf="sub.subMenu.length > 0" class="fa fa-angle-right" aria-hidden="true"></i>
                                 <ul class="subItem">
-                                    <li *ngFor="let item of sub.subMenu;">
-                                        {{
-                                            item.label
-                                        }}
-
-                                    </li>
+                                   <li *ngFor="let item of sub.subMenu;">
+                                    <a>{{  item.label }}</a>
+                                    <img *ngIf="item.img;" [src]='item.img' width="40px" height="40px"/>
+                                </li>
                                 </ul>
                             </li>
                         </ul>
