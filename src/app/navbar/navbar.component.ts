@@ -43,14 +43,18 @@ export class NavbarComponent implements OnInit {
               {
                 label: "Item 2",
                 link: '#',
+                img:'https://images.oyoroomscdn.com/uploads/hotel_image/1097/340ea5ee01acc37f.jpg'
               },
               {
                 label: 'Item 3',
                 link: '#',
+                img:'https://images.oyoroomscdn.com/uploads/hotel_image/1097/340ea5ee01acc37f.jpg'
               },
               {
                 label: 'Item 4',
                 link: '#',
+                img:'https://images.oyoroomscdn.com/uploads/hotel_image/1097/340ea5ee01acc37f.jpg'
+
               },
             ],
           },
